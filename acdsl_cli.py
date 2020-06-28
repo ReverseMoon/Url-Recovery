@@ -19,7 +19,12 @@ def effectiveDownload(url, filename, size, out_paths, ntries):
     # assert ntries >= 1
     # for _ in range(ntries):
     #     try:
-            print(url)
+            print("URL=",url)
+            print("FILENAME=",filename)
+            print("OYT PATH=",out_paths)
+            print("NTRIES=",ntries)
+            print("SIZE=",size)
+            
             # u = request.urlopen(url)
 
             # with open(os.path.normpath(out_paths + '/' + filename), 'wb') as f:
