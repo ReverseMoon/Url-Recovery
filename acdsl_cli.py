@@ -132,7 +132,7 @@ class acd_slmain:
             self._download(url, path + [it['name']], recursive, region, outpath + [it['name']])
 
     def download(self, args):
-        print("Region selected with --region parameter: amazon."+args.region)
+        # print("Region selected with --region parameter: amazon."+args.region)
         url = args.url.replace('/clouddrive/share/', '/drive/v1/shares/') # Replace API url
         url = '{}?resourceVersion=V2&ContentType=JSON&asset=ALL'.format(url)
         path = [p for p in args.path.split('/') if p.strip()]
